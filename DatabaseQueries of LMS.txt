@@ -1,0 +1,59 @@
+---------------------------------------------------
+Database Queries for LIBRARY MANAGEMENT SYSTEM Project
+---------------------------------------------------
+
+
+1 - Create database with in mysql
+
+create database library_m_system;
+
+2 - Use the database you just created
+
+use library_m_system;;
+
+3 - create login table
+
+create table login(username varchar(20), password varchar(20));
+
+4 - Insert values in login table
+
+insert into login values('admin', '12345');
+
+5 - Create an new employee table
+
+create table newemployee(name varchar(20) ,
+ id varchar(10) ,
+ email varchar(30) ,
+ no varchar(10) ,
+ dep varchar(20) );
+
+6 - Create a Add book table 
+
+create table addbook(BookID varchar(10),
+BookName varchar(50),
+Available varchar(10),
+Author varchar(30),
+Publishyear varchar(15));
+
+7 - Create a Issue book table 
+
+create table issuebook(BookID varchar(10),
+BookName varchar(50),
+Author varchar(30),
+Issuedate varchar(15),
+Signature varchar(10));
+
+8 - Create a Return table table 
+
+create table returnbook(BookID varchar(10),
+BookName varchar(50),
+Author varchar(30),
+Returndate varchar(15),
+Signature varchar(10),
+Intime varchar(10));
+
+9 - Create a Remove book table 
+
+create table removebook(BookID varchar(10),
+BookName varchar(50),
+Author varchar(20));
